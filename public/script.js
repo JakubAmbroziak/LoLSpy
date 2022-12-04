@@ -5,8 +5,15 @@ function searchSummoner() {
     
     console.log(summonerNickname)
     console.log(server);
-
-    
+  
+    $.post("/summonerInfo",
+    {
+        summonerNickname: summonerNickname,
+        server: server
+    },
+    function (data, status) {
+       console.log(data);
+    });
 }
 
 

@@ -20,6 +20,17 @@ app.use(bodyParser.json());
 
 const kayn = Kayn("RGAPI-12ec028c-3dcb-415a-94d6-1906be3fa22f")(/* optional config */)
 
+
+/////////////////////////////////////
+
+app.post("/summonerInfo", (req, res) => {
+  res.json([{
+    summonerNickname: req.body.summonerNickname,
+    server: req.body.server
+  }])
+  console.log(req.body);
+})
+
 app.listen(8008, () =>
 console.log(
   'HTTP Server up. Now go to http://localhost:8008/index.html in your browser.'
