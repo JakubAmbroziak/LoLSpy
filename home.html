@@ -5,36 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoLSpy</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+</script>
+
 
 </head>
 <body>
-    <input type="text" placeholder="Nickname">
+        <input name="summonerNickname" id="summonerNickname" type="text" placeholder="Nickname">
 
-    <select name="servers" id="servers">
-        <option value="br">Brazil</option>
-        <option value="eune">Europe Nordic & East </option>
-        <option value="euw"></option>
-        <option value="kr"></option>
-        <option value="lan"></option>
-        <option value="las"></option>
-        <option value="na"></option>
-        <option value="oce"></option>
-        <option value="ru"></option>
-        <option value="tr"></option>
-        <option value="jp"></option>
-      </select>
+        <select name="server" id="server">
+            <option value="br">Brazil</option>
+            <option value="eune">Europe Nordic & East </option>
+            <option value="euw">Europe West</option>
+            <option value="kr">Korea</option>
+            <option value="lan">Latin America North</option>
+            <option value="las">Latin America South</option>
+            <option value="na">North America</option>
+            <option value="oce">Oceania</option>
+            <option value="ru">Russia</option>
+            <option value="tr">Turkey</option>
+            <option value="jp">Japan</option>
+        </select>
+        <input type="submit" value="Submit" onclick="searchSummoner()">
 </body>
 </html>
-
-BRAZIL = 'br',
-EUROPE = 'eune',
-EUROPE_WEST = 'euw',
-KOREA = 'kr',
-LATIN_AMERICA_NORTH = 'lan',
-LATIN_AMERICA_SOUTH = 'las',
-NORTH_AMERICA = 'na',
-OCEANIA = 'oce',
-RUSSIA = 'ru',
-TURKEY = 'tr',
-JAPAN = 'jp',
