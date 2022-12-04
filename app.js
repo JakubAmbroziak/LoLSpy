@@ -11,6 +11,10 @@ app.use(bodyParser.json());
 
 const kayn = Kayn("RGAPI-12ec028c-3dcb-415a-94d6-1906be3fa22f")(/* optional config */)
 
+app.get('/login', (req, res) => {
+    
+  });
+
 //kayn.Summoner.by.name
 
 app.post('/createEmp', function(req, res){  
