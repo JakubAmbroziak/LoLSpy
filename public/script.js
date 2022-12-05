@@ -10,13 +10,11 @@ function searchSummoner() {
     {
         summonerNickname: summonerNickname,
         server: server
-    },
-    function (data, status) {
-       console.log(data);
     });
 }
 
 
 
+//window.location.href = '/summonerInfo';
 //   $( "button" ).on( "click", notify );
 //   console.log("working");
